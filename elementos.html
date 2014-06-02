@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nuevos Elementos HTML5</title>
+    </head>
+    <body>
+
+        <p>
+            <label for="nacionalidad">Nacionalidad</label>
+            <input type="text" id="nacionalidad" list="nacionalidades">
+            <datalist id="nacionalidades">
+                <option value="Peruano">
+                <option value="Boliviano">
+                <option value="Chileno">
+                <option value="Argentino">
+                <option value="Panameño">
+                <option value="Colombiano">
+                <option value="Australiano"> 
+                <option value="Italiano">    i
+                <option value="Frances"> 
+            </datalist>
+        </p>
+        <p>
+            <video width="320" height="240" loop controls>  
+                <source src="Multimedia/movie.ogg" type="video/ogg">
+                <source src="Multimedia/movie.mp4" type="video/mo4">
+                <object data="Multimedia/movie.mp4" width="320" height="240">
+                    <embed width="320" height="240" src="Multimedia/movie.swf">
+                </object>
+            </video>
+
+        </p>
+        <p>
+            <audio autoplay controls>
+                <source src="Multimedia/horse.mp3" type="audio/mp3">
+                <source src="Multimedia/horse.mp3" type="audio/ogg">
+                <embed height="50" width="100" src="horse.mp3">
+            </audio>
+        </p>
+
+    </body>
+</html>
