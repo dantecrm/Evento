@@ -1,0 +1,167 @@
+@font-face{
+    font-family: upeu;
+    src: url(font/JosefinSans-Regular.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: blue;
+    font-family: 'upeu';
+    font-size: 16px;
+    text-align: center;
+}
+
+nav{
+    background: yellowgreen;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 30%;
+}
+
+h1{
+    background: greenyellow;
+    margin: 0px;                       
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    color: whitesmoke;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 4px;
+    vertical-align: top;
+    width: 30%;
+}
+
+nav ul li:hover{
+    background: #fefefe;
+    color: #8ac007;
+}
+
+nav ul li a{
+    color: #fefefe;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;    
+}
+nav ul li a:hover{
+    color: yellowgreen;
+}
+
+#caja1{
+    background: linear-gradient(#ff0000, #00ff00);
+    border: 3px solid red;
+    height: 100px;
+    margin:10px auto;
+    transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+    width: 100px;
+}
+
+#caja1:hover{
+    transform: rotate(150deg) scale(2) translate(150px, 100px); 
+    -webkit-transform: rotate(150deg) scale(2) translate(150px, 100px); 
+}
+
+#caja1:hover{
+    transform:rotate(150deg) scale(2); 
+    -webkit-transform:rotate(150deg) scale(2); 
+}
+
+#caja2{
+    animation: miAnimacion 10s infinite;  
+    -webkit-animation: miAnimacion 10s infinite;
+    background: yellow;
+    border: 3px solid green;
+    border-radius: 50%;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+}
+
+#contenedor{
+    background: #fefefe;
+    margin: 50px auto;
+    position: relative;
+    width: 90%;
+}
+
+.noticia{
+    column-count: 4;
+    column-gap: 35px; 
+    -webkit-column-count: 4;
+    -webkit-column-gap: 35px; 
+    text-align: justify;
+}
+
+.tabla-cebra{
+    margin: 40px auto;
+    font-size: 1.5em;
+}
+
+.tabla-cebra tr th{
+    background: #8ac007;
+    color: #fefefe;
+}
+.tabla-cebra tr:nth-child(odd) td{
+    background: #b1f70f;
+}
+
+.tabla-cebra tr:nth-child(even) td{
+    background: green;
+}
+
+@keyframes miAnimacion{
+    0%{
+        background: red;
+    }
+    25%{
+        background: blue;
+    }
+    25%{
+        background: orange;
+    }
+    50%{
+        background: black;
+        border-radius: 0%;
+        transform: rotate(120deg);
+        -webkti-transform: rotate(120deg);
+    }
+    75%{
+        background: pink;
+    }        
+    100%{
+        background: yellow;
+    }
+}
+@-webkit-keyframes miAnimacion{
+    0%{
+        background: red;
+    }
+    25%{
+        background: blue;
+    }
+    25%{
+        background: orange;
+    }
+    50%{
+        background: black;
+        border-radius: 0%;
+        transform: rotate(120deg);
+        -webkti-transform: rotate(120deg);
+    }
+    75%{
+        background: pink;
+    }        
+    100%{
+        background: yellow;
+    }
+}
